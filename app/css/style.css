@@ -512,4 +512,56 @@ a {
   background-color: #E2AB3F;
   color: white;
 }
+
+.hotel {
+  padding-top: 200px;
+}
+.hotel__top {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 100px;
+}
+.hotel__top-header {
+  font-family: "Balqis";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 128px;
+  color: #E2AB3F;
+}
+.hotel__top-low-text {
+  position: absolute;
+  bottom: 0;
+  right: -95px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+.hotel__middle {
+  display: grid;
+  grid-template-columns: -webkit-min-content -webkit-min-content;
+  grid-template-columns: min-content min-content;
+  gap: 90px;
+}
+.hotel__body-text {
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+.hotel__body-text:last-of-type {
+  padding-bottom: 0;
+}
+.hotel__body-galery {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: -webkit-min-content -webkit-min-content;
+  grid-template-columns: min-content min-content;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  gap: 50px;
+}
 /*# sourceMappingURL=style.css.map */
