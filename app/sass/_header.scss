@@ -1,0 +1,51 @@
+.header {
+
+    background-image: url(../img/header/header_background.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 72px;
+    padding-bottom: 500px;
+
+    &__body {
+        display: grid;
+        grid-template-columns: min-content;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__top {
+        font-family: 'Balqis', 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10rem;
+        line-height: 16rem;
+        text-align: center;
+    }
+
+    &__text {
+        font-style: italic;
+        font-weight: 300;
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        text-align: end;
+        position: absolute;
+        bottom: 20px;
+        right: 110px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .header {
+
+        &__top {
+            font-size: 15rem;
+            line-height: 21rem;
+        }
+
+        &__text {
+            font-size: 3.5rem;
+            line-height: 4.125rem;
+
+        }
+    }
+}

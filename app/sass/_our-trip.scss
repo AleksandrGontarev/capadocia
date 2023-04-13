@@ -1,0 +1,71 @@
+.our-trip {
+    display: flex;
+    padding-top: 200px;
+
+    &__body {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-left: max(15px, calc((100vw - 1200px)/2));
+    }
+
+    &__top {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-bottom: 108px;
+    }
+
+    &__header {
+        font-family: 'Balqis', 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 128px;
+        color: #E2AB3F;
+
+        &-low-text {
+            position: absolute;
+            right: -80px;
+            bottom: 0;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    &__item {
+        padding-bottom: 50px;
+        font-size: 24px;
+        line-height: 28px;
+
+        &-header {
+            padding-bottom: 20px;
+            font-weight: 400;
+        }
+
+        &-text {
+            font-weight: 300;
+        }
+    }
+
+    &__link {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 11px 53px;
+        border: 1px solid #E2AB3F;
+        display: flex;
+        margin-right: auto;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    &__link:hover {
+        background-color: #E2AB3F;
+        color: white;
+    }
+
+}

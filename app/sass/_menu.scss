@@ -1,0 +1,41 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 152px;
+
+    // .menu__list-link
+
+    &__list-link {}
+
+    // .menu__link
+
+    &__link {
+        padding-right: 52px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+
+        &--tel {
+            padding-right: 0;
+            display: inline-flex;
+        }
+
+        &--tel::before {
+            background-image: url(../img/header/phone.svg);
+            content: '';
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        &--tel:hover::before {
+            background-image: url(../img/header/phone_hover.svg);
+        }
+    }
+
+    &__link:hover {
+        color: #4EB8D9;
+    }
+
+}

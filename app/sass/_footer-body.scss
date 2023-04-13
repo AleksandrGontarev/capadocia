@@ -1,0 +1,91 @@
+.footer-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__contacts {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__contacts-body {
+        padding: 71px 40px 187px 43px;
+        background-image: url(../img/footer/footer_body_pic.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+        text-align: center;
+    }
+
+    &__contacts-text {
+        font-family: 'Balqis', 'Arial', sans-serif;
+        font-weight: 400;
+        font-size: 86px;
+        line-height: 115px;
+        color: #E2AB3F;
+        margin-bottom: 50px;
+        height: 86px;
+    }
+
+    &__link {
+
+        display: block;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        &--tel::before {
+            content: '';
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+            background-image: url(../img/footer/contacts_ico/phone.svg);
+        }
+
+        &--mail::before {
+            content: '';
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+            background-image: url(../img/footer/contacts_ico/mail.svg);
+        }
+    }
+
+    &__link:hover {
+        color: #4EB8D9;
+    }
+
+
+    &__link:hover.footer-body__link--mail::before {
+        background-image: url(../img/footer/contacts_ico/mail_hover.svg);
+    }
+
+    &__link:hover.footer-body__link--tel::before {
+        background-image: url(../img/footer/contacts_ico/phone_hover.svg);
+    }
+
+
+    &__social {
+        padding-top: 18px;
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        gap: 15px;
+        justify-content: center;
+    }
+
+    &__social-link:hover path {
+        fill: #4EB8D9;
+    }
+
+    &__header {
+        align-self: center;
+        font-family: 'Balqis', 'Arial', sans-serif;
+        font-weight: 400;
+        font-size: 86px;
+        line-height: 115px;
+        color: #000000;
+    }
+}
