@@ -1,0 +1,107 @@
+.application {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    // .application__form
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 113px;
+    }
+
+    // .application__form-top
+
+    &__form-top {
+        padding-bottom: 20px;
+    }
+    &__form-top:last-child {
+        padding-left: 145px;
+    }
+
+    // .application__form-header
+
+    &__form-header {
+        font-family: 'Balqis';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 69px;
+        color: #E2AB3F;
+        
+    }
+
+    // .application__form-header-text
+
+    &__form-header-text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        padding-left: 145px;
+        &--second {
+            padding-left: 120px;
+        }
+    }
+   
+
+    // .application__form-btm
+
+    &__form-btm {
+        align-self: center;
+        padding-top: 80px;
+    }
+
+    // .application__form-btm-header
+
+    &__form-btm-header {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    // .application__form-input
+
+    &__form-input {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        width: 100%;
+        display: block;
+        padding-left: 31px;
+        padding-top: 14px;
+        padding-bottom: 15px;
+        border: 1px solid #E2AB3F;
+    }
+
+    // .application__form-button
+
+    &__form-button {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        padding: 12px 45px;
+        border: 1px solid #E2AB3F;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__form-button:hover {
+     color: white;
+     background-color: #E2AB3F;
+    }
+
+    // .application__pic
+
+    &__pic {}
+}
